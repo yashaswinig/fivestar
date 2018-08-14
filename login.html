@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>login</title>
+<script languge="javascript">
+function validation()
+{
+if(document.f1.userid.value=="" || !isNaN(document.f1.userid.value))
+{
+alert("please enter userid");
+return false;
+}
+else
+if(document.f1.pass.value=="")
+{
+alert("please enter password");
+document.f1.pass.focus();
+		   return false;
+}
+
+}
+</script>
+  </head>
+  <body bgcolor=grey>
+<tr><br><br><br><br><br
+                 
+                  <td width="10%" height="22" bgcolor="white"><div align="right" class="style5"></div></td>
+                  <td width="100%" bgcolor="white" class="style5"><a href="home1.html" class="HighLight"><CENTER><FONT SIZE="4" COLOR="">HOME</FONT></CENTER> </a></td>
+                  <td width="150%" height="40" bgcolor="white"> 
+                  <td width="10%" bgcolor="white">&nbsp;</td>
+                </tr>
+                
+   <center><b><font size="20" color="BLACK"><u>LOGIN</u></font></b>
+    <form method="get"  action="" onsubmit="return validation()" name="f1"><br>
+      User Id
+    <input type="text" name="userid" length="24"><br><br>
+      Password
+    <input type="password" name="pass" length="12"><br><br>
+    
+    <input type="submit" formaction="submit.html" value="submit">
+   
+<h3>
+    <p>New User?<a href="signup.html">signup</a></p>
+     
+</h3>
+  </center>
+</form>
+ </body>
+</html>

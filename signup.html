@@ -1,0 +1,210 @@
+<html>
+ <head>
+   <title>SignUp</title>
+
+     <script type="text/javascript">
+       function f1()
+{
+	var pattern1=/^[0-9]{10}$/
+	
+}
+
+       function validation()
+       {
+	   
+       if(document.f1.fn.value=="")
+         {
+           alert("Please enter the First name");
+		   document.f1.fn.focus();
+		   return false;
+		  }
+		  else
+		  		 if(document.f1.ln.value=="")
+         {
+            alert("Please enter the Last name");
+			document.f1.ln.focus();
+		   return false;
+		 }
+		 else
+         if(document.f1.gen.value=="")
+         {
+            alert("Please enter the gender");
+			document.f1.gen.focus();
+		   return false;
+
+         }
+		 else
+		 if(document.f1.user.value=="")
+         {
+            alert("Please enter userid");
+			document.f1.user.focus();
+		   return false;
+          }
+		  else
+		  		   if(document.f1.pass.value=="")
+         {
+            alert("Please enter password");
+			document.f1.pass.focus();
+		   return false;
+         }
+		 else
+		 		 if(document.f1.pass1.value=="")
+         {
+            alert("Please re-enter the password");
+			document.f1.pass1.focus();
+		   return false;
+         }
+		 else
+if(document.f1.pass.value!==document.f1.pass1.value)
+{
+	alert("please enter the correct password");
+	document.f1.pass.value="";
+	document.f1.pass1.value="";
+		document.f1.pass.focus();
+		return false;
+}
+else
+		 if(document.f1.id.value=="")
+         {
+           alert("please enter your valid email id");
+		   document.f1.id.focus();
+		   return false;
+         }
+		 else
+		  if(document.f1.ads.value=="")
+         {
+            alert("please enter the address");
+			document.f1.ads.focus();
+		   return false;
+          }
+		  else
+		  if(document.f1.phone.value=="" || isNaN(document.f1.phone.value))
+         {
+            alert("Please enter phone number");
+			document.f1.phone.focus();
+		   return false;
+         }
+		 else
+		 if(document.f1.city.value=="")
+         {
+            alert("Please enter city ");
+			document.f1.city.focus();
+		   return false;
+         }
+		 else
+		 if(document.f1.state.value=="")
+         {
+            alert("Please enter state");
+			document.f1.state.focus();
+		   return false;
+         }
+		 else
+		  if(document.f1.country.value=="")
+		  {
+            alert("Please enter country");
+			document.f1.country.focus();
+		   return false;
+         }
+		 else
+		 if(document.f1.pin.value=="" || isNaN(document.f1.pin.value))
+         {
+            alert("Please enter pincode number");
+			document.f1.pin.focus();
+		   return false;
+         }
+		  else
+		 return true;
+
+   } 
+</script>  
+ </head>
+   <body bgcolor="grey">
+       <table width="420" border="0"  align="center" cellpadding="0" cellspacing="0" background="AP.jpg" >
+    <tr>
+      <td>
+	  <table width="600"  border="0" cellspacing="0" cellpadding="0">
+<tr><br><br><br><br><br>
+
+                 
+                  <td width="10%" height="22" bgcolor="grey"><div align="right" class="style5"></div></td>
+                  <td width="100%" bgcolor="grey" class="style5"><a href="home1.html" class="HighLight"><CENTER><FONT SIZE="4" COLOR="">HOME</FONT></CENTER> </a></td>
+                  <td width="150%" height="40" bgcolor="white"> 
+                  <td width="10%" bgcolor="grey">&nbsp;</td>
+                </tr>
+                        
+      </table>
+    <center>
+      
+	    <h2><font size="20" color="black"><u>SIGN-UP</u></font></h2>
+      <form method="get" name="f1" action="" onsubmit="return validation()" >
+        <table border="0"> 
+          <tr>
+              <th align="right"><I>First Name</I></FONT></th>
+              <td><input type="text" name="fn"></td>
+          </tr>
+		  <tr>
+              <th align="right">Last Name</FONT></th>
+              <td><input type="text" name="ln"></td>
+          </tr>
+          
+          <tr>
+             <th align="right">Gender</FONT></th>
+             <td>
+              <select name="gen" size="1">
+               <option value="--choose--">--choose--</option>
+               <option value="Female">Female</option>
+               <option value="Male">Male</option>
+             </select>  
+             </td>  
+          </tr>
+          <tr>
+             <th align="right" >UserId</FONT></th>
+             <td><input type="text" name="user"></td>
+          </tr>
+          <tr>      
+             <th align="right">Password</FONT></th>
+             <td><input type="password" name="pass">(minimum 8 characters)</td>
+          </tr>
+          <tr>
+            <th align="right" >Reenter Password</FONT></th>
+            <td><input type="password" name="pass1"></td>
+          </tr>
+          <tr>
+            <th align="right"> Email Id</FONT></th>                               
+            <td><input type="email_id" name="id"></td>
+          </tr>
+          
+          <tr>
+            <th align="right">Address:</FONT></th>                               
+            <td><textarea name="ads" rows="5" cols="22"></textarea></td>
+          </tr>
+          <tr>
+             <th align="right">PhoneNo</FONT></th>
+             <td><input type="text" name="phone" maxlength='10' onfocus="f1()"></td>  
+          </tr>
+		   <tr>
+             <th align="right">City</FONT></th>
+             <td><input type="text" name="city"></td>  
+          </tr>
+		  <tr>
+             <th align="right">State</FONT></th>
+             <td><input type="text" name="state"></td>  
+          </tr>
+		  <tr>
+             <th align="right">Country</FONT></th>
+             <td><input type="text" name="country"></td>  
+          </tr>
+		  <tr>
+             <th align="right">Pincode</FONT></th>
+             <td><input type="text" name="pin"></td>  
+          </tr>
+    </table><br>
+
+    <input type="submit" formaction="submit.html" value="submit">
+           
+	<input type="reset" value="Clear">	
+
+   </form>
+  </center>   
+  </body> 
+</html>
